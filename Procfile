@@ -1,1 +1,6 @@
-web: cd ./server && npm run start
+{
+    "scripts": {
+        "start": "cd ./server && npm run start"
+    }
+}
+
