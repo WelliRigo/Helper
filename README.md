@@ -26,6 +26,10 @@ This project was developed using the following tools:
 - [Node.js](https://nodejs.org/en/)
 - [ReactJS](https://reactjs.org/)
 
+Highlighted libraries:
+- [Express](http://expressjs.com/pt-br/) - HTTP requests (backend)
+- [Axios](https://axios-http.com/ptbr/docs/intro) - HTTP requests (frontend)
+
 <br/>
 
 <a id="results"></a>
