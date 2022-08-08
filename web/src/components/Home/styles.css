@@ -1,0 +1,145 @@
+html {
+    background-color: #F0F0F5;
+}
+
+#page-home {
+    width: 100%;
+    max-width: 1100px;
+  
+    margin: 0 auto;
+}
+  
+#page-home header {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-home header h1 {
+    margin-left: 1vw;
+}
+  
+#page-home main {
+    margin: 20px auto;
+    padding: 50px;
+    max-width: 730px;
+    background: #FFF;
+    border-radius: 8px;
+  
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home main form {
+    display: flex;
+    flex-direction: column;
+}
+  
+#page-home main h1 {
+    font-size: 25px;
+}
+  
+#page-home main .field {
+    margin-top: 20px;
+    min-inline-size: auto;
+    border: 0;
+}
+  
+#page-home main legend {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+  
+#page-home main .field {
+    flex: 1;
+  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+  
+#page-home main .field input {
+    flex: 1;
+    background: #F0F0F5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6C6C80;
+}
+  
+#page-home main .field input::placeholder {
+    color: #A0A0B2;
+}
+  
+#page-home main .field label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+  
+#page-home main .field :disabled {
+    cursor: not-allowed;
+}
+  
+#page-home main .field-check {
+    flex-direction: row;
+    align-items: center;
+}
+  
+#page-home main .field-check label {
+    margin: 0 0 0 8px;
+}
+  
+#page-home main .send {
+    margin-top: 20px;
+    align-self: center;
+    height: 56px;
+}
+
+#page-home main button {
+    width: 260px;
+    height: 56px;
+    background: #2F80ED;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    align-self: center;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+  
+#page-home main button:hover {
+    background: #0063E4;
+}
+
+#page-home main h2{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#page-home main h3{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#page-home main p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #6C6C80;
+}
+
+.none{
+    display: none;
+}
