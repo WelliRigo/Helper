@@ -1,9 +1,9 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" src="https://i.imgur.com/gmMROJl.png">
+    <img alt="Logo" title="#logo" width="100px" src="https://i.imgur.com/gmMROJl.png">    
+    <br>
     Helper
-    <br><br>
-    <b>Solving to you!</b> 
 </h3>
+<h5 align="center">Solving to you!</h4> 
 
 # Summary
 - [About](#about)
@@ -38,7 +38,7 @@ This project was developed using the following tools:
 
 <a id="run"></a>
 ## :fire: Run the App
-- ### **Pré-requisitos**
+- ### **Required**
   - **[Node.js](https://nodejs.org/en/)**
   - Any Package Manager, like **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**
 1. Clone the repository :
@@ -68,4 +68,8 @@ This project was developed using the following tools:
 
 ```
 <br>
+
+<h4 align="center">
+    Made with 💜 by <a href="www.linkedin.com/in/welliton-rigo" target="_blank">Welliton Rigo</a>
+</h4>
 
