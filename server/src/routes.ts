@@ -1,6 +1,6 @@
 import express from 'express';
 import { celebrate, Joi } from 'celebrate';
-import CalculationService from './CalculationService';
+import CalculationService from './services/CalculationService';
 
 const routes = express.Router();
 const calculationService = new CalculationService();
