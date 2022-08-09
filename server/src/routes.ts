@@ -9,7 +9,7 @@ routes.post(
     '/calculate', 
     celebrate({
         body: Joi.object().keys({
-            value: Joi.number().required()
+            value: Joi.number().integer().required()
         })
     }, {
         abortEarly: false
