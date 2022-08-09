@@ -35,10 +35,9 @@ Highlighted libraries:
 <br/>
 
 <a id="results"></a>
-## :heavy_check_mark: Results:
+## :heavy_check_mark: Layout:
 
-- The API is available at [Heroku](https://reactjs.org/);
-- You can check the application page at [Vercel](https://reactjs.org/)
+- Layout is available at [Figma](https://www.figma.com/file/QdATcQjcp3dJbEEt7AKYwc/Bridge?node-id=136%3A546);
 
 <br/>
 
