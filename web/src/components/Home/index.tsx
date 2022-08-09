@@ -3,6 +3,12 @@ import './styles.css';
 import logo from '../../assets/logo.svg';
 import api from '../../services/api'; 
 import Loading from '../Loading';
+import Historic from '../Historic';
+
+type historicObject = {
+    input: number;
+    response: number;
+};
 
 const Home = () => {
     const [responseValue, setResponseValue] = useState<number>(0);
@@ -10,6 +16,7 @@ const Home = () => {
     const [loading, setLoading] = useState<boolean>(false);
     const [displayResponse, setDisplayResponse] = useState<boolean>(false);
     const [inputNumber, setInputNumber] = useState<number>(0);
+    const [responseHistoric, setResponseHistoric] = useState<historicObject[]>([]);
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement>){
         const {value} = event.target;
@@ -31,6 +38,10 @@ const Home = () => {
                 setDisplayResponse(true);
                 setResponseValue(response.data.value)
                 setResponseTime(response.data.time)
+                setResponseHistoric([{
+                    input: inputNumber,
+                    response: response.data.value
+                }, ...responseHistoric])
             });        
     }
 
@@ -68,6 +79,8 @@ const Home = () => {
                     <h2 className={displayResponse ? '' : 'none'}>Resposta</h2>
                     <h3 className={displayResponse ? '' : 'none'}>{responseValue}</h3>
                     <p className={displayResponse ? '' : 'none'}>tempo de cálculo: {responseTime}s</p>
+
+                    <Historic show={displayResponse} responseHistoric={responseHistoric} />
                 </main>
 
                 
