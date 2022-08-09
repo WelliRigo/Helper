@@ -10,6 +10,7 @@
 - [Technologies](#technologies)
 - [Results](#results)
 - [Run the App](#run)
+- [Run unit tests](#run-tests)
 
 <a id="about"></a>
 ## 🔖 Getting Started with Helper
@@ -29,6 +30,7 @@ This project was developed using the following tools:
 Highlighted libraries:
 - [Express](http://expressjs.com/pt-br/) - HTTP requests (backend)
 - [Axios](https://axios-http.com/ptbr/docs/intro) - HTTP requests (frontend)
+- [Jest](https://jestjs.io/pt-BR/) - Tests
 
 <br/>
 
@@ -71,6 +73,21 @@ Highlighted libraries:
   $ npm run build
 
 ```
+<br>
+
+<a id="run-tests"></a>
+## ✅ Run unit tests
+Tests were made with Jest
+
+```sh
+  # Go to server
+  $ cd server
+
+  # Run
+  $ npx jest
+
+```
+
 <br>
 
 <h4 align="center">
