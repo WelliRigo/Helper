@@ -15,7 +15,7 @@
 <a id="about"></a>
 ## 🔖 Getting Started with Helper
 
-Helper is an <strong>Web application</string> to solve the problem to calculate the number of positive integers n smaller than the input value, when n and n+1 have the same number of positive divisors 
+Helper is an <strong>Web application</strong> to solve the problem to calculate the number of positive integers n smaller than the input value, when n and n+1 have the same number of positive divisors 
 
 <br>
 
@@ -90,6 +90,6 @@ Tests were made with Jest
 <br>
 
 <h4 align="center">
-    Made with 💜 by <a href="www.linkedin.com/in/welliton-rigo" target="_blank">Welliton Rigo</a>
+    Made with 💙 by <a href="www.linkedin.com/in/welliton-rigo" target="_blank">Welliton Rigo</a>
 </h4>
 
