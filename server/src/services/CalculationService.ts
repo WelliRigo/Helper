@@ -16,10 +16,8 @@ class CalculationService {
 
     // Calculates the number of integer numbers n smaller than a value,
     // when n and n+1 have the same number of positive divisors
-    calculateIntegers = (request: Request, response: Response) => {
+    calculateIntegers = (value: number) => {
         const start = performance.now();
-        
-        let value = request.body.value;
         
         let lastPositiveDivisors = -1;
         let sequencialPositiveWithSameDivisor = 0;
@@ -39,10 +37,10 @@ class CalculationService {
         const inSeconds = (stop - start) / 1000;
         const rounded = Number(inSeconds).toFixed(5 );
 
-        return response.json({
+        return {
             value: sequencialPositiveWithSameDivisor,
             time: rounded
-        });
+        };
     }
 }
 
