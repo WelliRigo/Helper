@@ -1,9 +1,9 @@
 import express from 'express';
 import { celebrate, Joi } from 'celebrate';
-import CalculationService from './CalculationService';
+import CalculationController from './controllers/CalculationController';
 
 const routes = express.Router();
-const calculationService = new CalculationService();
+const calculationController = new CalculationController();
 
 routes.post(
     '/calculate', 
@@ -14,7 +14,7 @@ routes.post(
     }, {
         abortEarly: false
     }),
-    calculationService.calculateIntegers
+    calculationController.calculateIntegers
 );
 
 export default routes;

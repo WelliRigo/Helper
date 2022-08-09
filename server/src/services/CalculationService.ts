@@ -1,29 +1,30 @@
 import {Request, Response} from 'express';
 import { performance  } from 'perf_hooks';
 
-class CalculationService{
+class CalculationService {
 
-    // Calculates the number of integer numbers n smaller than value, when n and n+1 have the same number of positive divisors
-    async calculateIntegers (request: Request, response: Response){
+    calculatePositiveDivisors = (num: number) => {
+        let positiveDivisors = 2;
+        for (let i = 2; i < ( Math.floor(Math.sqrt(num))) + 1; i++) {
+           if (num % i == 0) {
+                positiveDivisors += (num/i == i) ? 1 : 2;
+           }
+        }
+
+        return positiveDivisors;
+    }
+
+    // Calculates the number of integer numbers n smaller than a value,
+    // when n and n+1 have the same number of positive divisors
+    calculateIntegers = (value: number) => {
         const start = performance.now();
-        
-        let value = request.body.value;
-        
         
         let lastPositiveDivisors = -1;
         let sequencialPositiveWithSameDivisor = 0;
 
         for(let i = 2; i <= value; i++){
 
-            // calculate positive divisors
-            let positiveDivisors = 2;
-            for(let j=2; j< ( Math.floor(Math.sqrt(i))) + 1; j++)
-            {
-               if(i%j==0)
-               {
-                    positiveDivisors += (i/j == j) ? 1 : 2;
-               }
-            }
+            let positiveDivisors = this.calculatePositiveDivisors(i);
             
             if(positiveDivisors == lastPositiveDivisors){
                 sequencialPositiveWithSameDivisor++;
@@ -36,10 +37,10 @@ class CalculationService{
         const inSeconds = (stop - start) / 1000;
         const rounded = Number(inSeconds).toFixed(5 );
 
-        return response.json({
+        return {
             value: sequencialPositiveWithSameDivisor,
             time: rounded
-        });
+        };
     }
 }
 
