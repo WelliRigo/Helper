@@ -48,7 +48,7 @@ Highlighted libraries:
   - Any Package Manager, like **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**
 1. Clone the repository :
 ```sh
-  $ git clone https://github.com/WelliRigo/Ecoleta.git
+  $ git clone https://github.com/WelliRigo/Helper
 ```
 2. Running the app:
 ```sh
